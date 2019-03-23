@@ -1,0 +1,308 @@
+<!--div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Blog Post
+                <small>A Sample Blog Post</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a>
+                </li>
+                <li class="active">Blog Post</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+         
+            <hr>
+            <p><i class="fa fa-clock-o"></i> Posted on August 24, 2013 at 9:00 PM by <a href="#">Start Boostrap</a>
+            </p>
+            <hr>
+            <img src="http://placehold.it/900x300" class="img-responsive">
+            <hr>
+            <p class="lead">Science cuts two ways, </p>
+
+            
+
+            <p>Cookie jelly 
+                jelly</p>
+
+           
+            <p>Tilefish </p>
+
+            <p><strong>Placeholder text by:</strong>
+            </p>
+            <ul>
+                <li><a href="http://spaceipsum.com/">Space Ipsum</a>
+                </li>
+                <li><a href="http://cupcakeipsum.com/">Cupcake Ipsum</a>
+                </li>
+                <li><a href="http://tunaipsum.com/">Tuna Ipsum</a>
+                </li>
+            </ul>
+
+            <hr>
+
+            
+            <div class="well">
+                <h4>Leave a Comment:</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <h3>Start Bootstrap
+                <small>9</small>
+            </h3>
+            <p>This has</p>
+
+            <h3>Start Bootstrap
+                <small>on</small>
+            </h3>
+            <p>Don</p>
+
+        </div>
+
+        <div class="col-lg-4">
+            <div class="well">
+                <h4>Blog Search</h4>
+
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                </div>
+                
+            </div>
+       
+            <div class="well">
+                <h4>Popular Blog Categories</h4>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#dinosaurs">Dinosaurs</a>
+                            </li>
+                            <li><a href="#spaceships">Spaceships</a>
+                            </li>
+                            <li><a href="#fried-foods">Fried Foods</a>
+                            </li>
+                            <li><a href="#wild-animals">Wild Animals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#alien-abductions">Alien Abductions</a>
+                            </li>
+                            <li><a href="#business-casual">Business Casual</a>
+                            </li>
+                            <li><a href="#robots">Robots</a>
+                            </li>
+                            <li><a href="#fireworks">Fireworks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="well">
+                <h4>Side Widget Well</h4>
+
+                <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
+            </div>
+            
+        </div>
+    </div>
+
+</div-->
+<!-- /.container -->
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<body>
+
+<form id="regForm" action="/action_page.php">
+  <h1>Register:</h1>
+  <div class="tab">Name:
+    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  </div>
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  </div>
+  <div class="tab">Birthday:
+    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+  </div>
+  <div class="tab">Login Info:
+    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script>
+var currentTab = 0; 
+showTab(currentTab); 
+
+function showTab(n) {
+  
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  var x = document.getElementsByClassName("tab");
+  if (n == 1 && !validateForm()) return false;
+  x[currentTab].style.display = "none";
+  currentTab = currentTab + n;
+  if (currentTab >= x.length) {
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  showTab(currentTab);
+}
+
+function validateForm() {
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  for (i = 0; i < y.length; i++) {
+    if (y[i].value == "") {
+      y[i].className += " invalid";
+      valid = false;
+    }
+  }
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid;
+}
+
+function fixStepIndicator(n) {
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  x[n].className += " active";
+}
+</script>
+
+
